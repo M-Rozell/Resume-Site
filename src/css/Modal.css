@@ -1,0 +1,80 @@
+/* .aboutContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 27, 28);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.modalContainer {
+    border-radius: 12px;
+    background-color: rgb(27, 27, 28);
+    box-shadow: cornsilk 3px 3px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+    margin: 10px 75px 10px 75px;
+    
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    color: cornsilk;
+    font-size: 1rem;
+}
+
+.modalContainer .modalList {
+    color: aqua;
+    font-size: .75rem;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: cornsilk;
+    margin-right: 10px;
+}
+
+.modalContainer .modalBody {
+    /* flex: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button {
+    margin-top: 5px;
+    padding: .1rem .5rem;
+    border: none;
+    background-color: transparent;
+    border-style: groove;
+    border-color: cornsilk;
+    color: cornsilk;
+    border-radius: 5px;
+    font-size: .75rem;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background-color: rgb(70, 2, 16);
+}
