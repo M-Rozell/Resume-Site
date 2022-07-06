@@ -1,40 +1,38 @@
-/* .aboutContainer {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(27, 27, 28);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
-.modalContainer {
-    border-radius: 12px;
-    background-color: rgb(27, 27, 28);
-    box-shadow: cornsilk 3px 3px 3px 3px;
+.row {
     display: flex;
-    flex-direction: column;
-    padding: .2rem;
-    margin: 10px 75px 10px 75px;
-    
+    align-items: center;
+    justify-content: center;
 }
 
-.modalContainer .title {
-    display: inline-block;
+.modalBg {
+    border-radius: 12px;
+    background-color: rgb(27, 27, 28);
+    box-shadow: cornsilk 1px 1px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
     text-align: center;
-    color: cornsilk;
+    color: aqua;
     font-size: 1rem;
 }
 
-.modalContainer .modalList {
-    color: aqua;
+ .modalList {
+    display: flex;
+    color: cornsilk;
     font-size: .75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .titleCloseBtn {
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .titleCloseBtn button {
@@ -43,38 +41,28 @@
     font-size: 1rem;
     cursor: pointer;
     color: cornsilk;
-    margin-right: 10px;
 }
 
-.modalContainer .modalBody {
-    /* flex: 50%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.modalContainer .footer {
+.footer {
     flex: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modalContainer .footer button {
-    margin-top: 5px;
+.footer button {
+    margin-top: 8px;
+    margin-bottom: 8px;
     padding: .1rem .5rem;
     border: none;
     background-color: transparent;
     border-style: groove;
-    border-color: cornsilk;
+    border-color: aqua;
     color: cornsilk;
     border-radius: 5px;
     font-size: .75rem;
     cursor: pointer;
 }
 
-#cancelBtn {
-    background-color: rgb(70, 2, 16);
-}
+
+

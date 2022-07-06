@@ -1,17 +1,35 @@
 
-import React from "react";
+import React, { useState } from "react";
 import "../css/Home.css"
 import About from "./About";
+import Projects from "./Projects";
 
 const Home = () => {
 
+    const [about, setAbout] = useState(false)
+    const [projects, setProjects] = useState(false)
+
+    function ogHome() {
+        setAbout(false)
+        setProjects(false)
+    }
+
+    function ogAbout() {
+        setAbout(true)
+        setProjects(false)
+    }
+
+    function ogProjects() {
+        setProjects(true)
+        setAbout(false)
+    }
     return (
-        <div className="app">
+        <div className="app" >
 
             <div className="buttons">
-                <button className="btn homeBtn">Home</button>
-                <button className="btn aboutBtn">About</button>
-                <button className="btn projectBtn">Projects</button>
+                <button className="btn homeBtn" onClick={() => { ogHome() }}>Home</button>
+                <button className="btn aboutBtn" onClick={() => { ogAbout() }}>About</button>
+                <button className="btn projectBtn" onClick={() => { ogProjects() }}>Projects</button>
             </div>
 
             <div className="container ">
@@ -21,7 +39,10 @@ const Home = () => {
                     <p className="fullStack fade-in-text">Full-Stack Developer</p>
                 </div>
             </div>
-            <About />
+            
+            {about && <About />}
+            {projects && <Projects />}
+        
         </div>
     )
 }
@@ -29,14 +50,3 @@ const Home = () => {
 console.log('home')
 export default Home;
 
-
-
-{/* <div className="lines">
-                    <div className="verticalLine"></div>
-                    <div className="verticalLine2"></div>
-                    <div className="verticalLine3"></div>
-                    <div className="verticalLine4"></div>
-                    <div className="verticalLine5"></div>
-                    <div className="verticalLine6"></div>
-                
-                </div> */}

@@ -12,7 +12,8 @@ const About = () => {
     const [modal, setModal] = useState(false) //don't want it to render initially.
 
     return (
-        <div className="aboutContainer">
+        
+        <div className="aboutContainer" >
 
             <div className="linkBtns">
                 <a href="https://github.com/M-Rozell" className="githubBtn"><BsGithub /></a>
@@ -20,8 +21,10 @@ const About = () => {
                 <a href="https://www.linkedin.com/in/maggie-rozell/" className="linkedinBtn"><ImLinkedin /></a>
             </div>
 
+            {modal && <Modal closeModal={setModal} />}
+            {/* if modal is true then render component */}
 
-            <div className="resume">
+            <div className="resume" >
 
                 <div className="objective">
                     {/* <text className="careerObjective">Career Objective</text> */}
@@ -59,12 +62,11 @@ const About = () => {
                         </ul>
                     </div>
 
-                    <button id="modalBtn"
-                        onClick={() => { setModal(true) }}>
-                        Click for list of skills</button>
-                    {modal && <Modal closeModal={setModal} />}
-                    {/* if modal is true then render component */}
-
+                    <div className="btnDiv">
+                        <button id="modalBtn"
+                            onClick={() => { setModal(true) }}>
+                            Click for list of skills</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,3 +74,5 @@ const About = () => {
 }
 
 export default About;
+
+

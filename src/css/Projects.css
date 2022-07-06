@@ -1,0 +1,20 @@
+
+.projectsContainer {
+    color: cornsilk;
+}
+
+ .projectsBtns {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projectsBtns .tttBtn {
+    background: transparent;
+    color: cornsilk;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: .15rem .5rem;
+}

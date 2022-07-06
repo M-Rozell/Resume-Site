@@ -1,16 +1,12 @@
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    background-color: rgb(27, 27, 28);
 }
 
 .app {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: rgb(27, 27, 28);
-
 }
 
 .buttons {
@@ -44,8 +40,7 @@
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-    
-  }
+}
   
   .btn:focus {
     outline: none ! important;
@@ -107,7 +102,6 @@
     }
 }    
     
-
 .fullStack {
     color: cornsilk;
     font-size: 1.5rem;
@@ -130,52 +124,7 @@
 
 
 
-/* .lines {
-    display: flex;
 
-}
-
-.verticalLine {
-    border-left: 2px double aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 6px;
-}
-
-.verticalLine2 {
-    border-left: 2px solid aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 12px;
-}
-
-.verticalLine3 {
-    border-left: 2px groove aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 18px;
-}
-
-.verticalLine4 {
-    border-left: 2px double aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 28px;
-}
-
-.verticalLine5 {
-    border-left: 2px groove aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 42px;
-}
-
-.verticalLine6 {
-    border-left: 2px double aqua;
-    height: 100vh;
-    position: absolute;
-    margin-left: 50px;
-} */
     
 
 
