@@ -4,11 +4,11 @@
 }
 
  .projectsBtns {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 10px;
 }
 
 .projectsBtns .tttBtn {
@@ -17,4 +17,20 @@
     border: 1px solid aqua;
     border-radius: 8px;
     padding: .15rem .5rem;
+}
+
+.taskBtn {
+    background: transparent;
+    color: cornsilk;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: .15rem .5rem; 
+}
+
+.weatherBtn {
+    background: transparent;
+    color: cornsilk;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: .15rem .5rem; 
 }
