@@ -4,7 +4,7 @@ import "../css/Home.css"
 import About from "./About";
 import Projects from "./Projects";
 
-const Home = () => {
+const MainHome = () => {
 
     const [about, setAbout] = useState(false)
     const [projects, setProjects] = useState(false)
@@ -48,5 +48,5 @@ const Home = () => {
 }
 
 console.log('home')
-export default Home;
+export default MainHome;
 

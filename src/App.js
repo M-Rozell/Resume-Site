@@ -1,6 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
-import Home from "./Pages/Home"
+import MainHome from "./Pages/MainHome"
+import GhibliHome from "./components/ghibliComponents/GhibliHome";
+import Films from "./components/ghibliComponents/Films";
+import People from "./components/ghibliComponents/People";
+import Vehicles from './components/ghibliComponents/Vehicles';
+import FilmDetails from "./components/ghibliComponents/FilmDetails";
+import PilotDetails from './components/ghibliComponents/PilotDetails';
+import PeopleDetails from './components/ghibliComponents/PeopleDetails';
+import VehicleDetails from './components/ghibliComponents/VehicleDetails';
 
 
 const App = () => {
@@ -11,7 +19,17 @@ const App = () => {
 
             <Routes>
 
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<MainHome />} />
+                <Route path="/GhibliHome" element={<GhibliHome />} />
+                <Route path="/Films" element={<Films />} />
+                <Route path="/People" element={<People />} />
+                <Route path="/Vehicles" element={<Vehicles />} />
+                <Route path="/Films/:filmid" element={<FilmDetails />} />
+                <Route path="/People/:peopleid" element={<PeopleDetails />} />
+                <Route path="/Vehicles/:vehicleid" element={<VehicleDetails />} />
+                <Route path="/PeopleDetails" element={<PeopleDetails />} />
+                <Route path="/VehicleDetails" element={<VehicleDetails />} />
+                <Route path="/PilotDetails/:peopleid" element={<PilotDetails />} />
                 
             </Routes>
         </BrowserRouter>

@@ -1,0 +1,34 @@
+.card-text {
+    color: black;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-link {
+    color: black;
+}
+
+.navContainer {
+    background-color: white;
+}
+
+.ghibliBtn {
+    color: black;
+}
+
+.ghibliCloseBtn {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.ghibliCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: cornsilk;
+    margin-top: 5px;
+}
+

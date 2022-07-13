@@ -5,10 +5,10 @@
 
  .projectsBtns {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
     
 }
 
@@ -19,6 +19,7 @@
     border-radius: 8px;
     padding: .15rem .5rem;
     background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
 }
 
 .taskBtn {
@@ -27,7 +28,8 @@
     border: 1px solid aqua;
     border-radius: 8px;
     padding: .15rem .5rem;
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px; 
 }
 
 .weatherBtn {
@@ -36,5 +38,16 @@
     border: 1px solid aqua;
     border-radius: 8px;
     padding: .15rem .5rem;
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px; 
+}
+
+.bootstrapBtn {
+    background: transparent;
+    color: cornsilk;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: .15rem .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
 }
