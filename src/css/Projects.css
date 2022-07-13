@@ -5,18 +5,20 @@
 
  .projectsBtns {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     margin-top: 10px;
+    
 }
 
-.projectsBtns .tttBtn {
+.tttBtn {
     background: transparent;
     color: cornsilk;
     border: 1px solid aqua;
     border-radius: 8px;
     padding: .15rem .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .taskBtn {
@@ -24,7 +26,8 @@
     color: cornsilk;
     border: 1px solid aqua;
     border-radius: 8px;
-    padding: .15rem .5rem; 
+    padding: .15rem .5rem;
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .weatherBtn {
@@ -32,5 +35,6 @@
     color: cornsilk;
     border: 1px solid aqua;
     border-radius: 8px;
-    padding: .15rem .5rem; 
+    padding: .15rem .5rem;
+    background-color: rgba(255, 255, 255, 0.1); 
 }

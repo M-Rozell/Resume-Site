@@ -23,32 +23,38 @@ function WeatherModal({ closeModal }) {
 
     return (
         <div className="weatherAppContainer">
-            <div className='weatherCloseBtn '>
-                <button onClick={() => closeModal(false)}><AiOutlineCloseCircle /></button>
-            </div>
-            <div className="search">
-                <input value={location} onChange={e => setLocation(e.target.value)} type='text' placeholder="Location" onKeyPress={search} />
-                <div className="day">{moment().format('MMMM Do YYYY, h:mm:ss a')}</div>
-            </div>
+            <div className="weatherApp">
 
-            <div className="weatherContainer">
-
-                <div className="top">
-                    <div className="location"><p className="paraLocation">{data.name}</p></div>
-                    <div className="temp">{data.main ? <h1 className="tempHone">{data.main.temp.toFixed()}°F</h1> : null}</div>
-                    <div className="skyBox">
-                    <div className="weatherIcon">{data.weather ? <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}></img> : null}</div>
-                    <div className="sky">{data.weather ? <p className="paraSky">{data.weather[0].main}</p> : null}</div>
-                </div>
-                </div>
-
-                {data.name !== undefined &&
-                    <div className="middle">
-                        <div className="feelsLike">{data.main ? <p className="bold para">{data.main.feels_like.toFixed()}°F <br />Feels Like</p> : null}</div>
-                        <div className="humidity">{data.main ? <p className="bold para">{data.main.humidity}% <br />Humidity</p> : null}</div>
-                        <div className="wind"><p className="bold para">{data.wind.speed.toFixed()}mph<br />Wind</p></div>
+                <div className="topContainer">
+                    <div className='weatherCloseBtn '>
+                        <button onClick={() => closeModal(false)}><AiOutlineCloseCircle /></button>
                     </div>
-                }
+                    <div className="search">
+                        <input value={location} onChange={e => setLocation(e.target.value)} type='text' placeholder="Location" onKeyPress={search} />
+                        <div className="day">{moment().format('MMMM Do YYYY, h:mm:ss a')}</div>
+                    </div>
+                </div>
+
+
+                <div className="weatherContainer">
+                    <div className="top">
+                        <div className="location"><p className="paraLocation">{data.name}</p></div>
+                        <div className="temp">{data.main ? <h1 className="tempHone">{data.main.temp.toFixed()}°F</h1> : null}</div>
+                        <div className="skyBox">
+                            <div className="weatherIcon">{data.weather ? <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt="A Beautiful Sunny Day"></img> : null}</div>
+                            <div className="sky">{data.weather ? <p className="paraSky">{data.weather[0].main}</p> : null}</div>
+                        </div>
+                    </div>
+
+                    {data.name !== undefined &&
+                        <div className="middle">
+                            <div className="feelsLike">{data.main ? <p className="para">{data.main.feels_like.toFixed()}°F <br />Feels Like</p> : null}</div>
+                            <div className="humidity">{data.main ? <p className="para">{data.main.humidity}% <br />Humidity</p> : null}</div>
+                            <div className="wind"><p className="para">{data.wind.speed.toFixed()}mph<br />Wind</p></div>
+                        </div>
+                    }
+
+                </div>
             </div>
         </div>
     )
