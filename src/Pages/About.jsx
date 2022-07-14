@@ -16,9 +16,9 @@ const About = () => {
         <div className="aboutContainer" >
 
             <div className="linkBtns">
-                <a href="https://github.com/M-Rozell" className="githubBtn"><BsGithub /></a>
-                <a href="mailto: maggiemagnum@gmail.com" className="emailBtn"><AiOutlineMail /></a>
-                <a href="https://www.linkedin.com/in/maggie-rozell/" className="linkedinBtn"><ImLinkedin /></a>
+                <a href="https://github.com/M-Rozell" id="githubBtn"><BsGithub /></a>
+                <a href="mailto: maggiemagnum@gmail.com" id="emailBtn"><AiOutlineMail /></a>
+                <a href="https://www.linkedin.com/in/maggie-rozell/" id="linkedinBtn"><ImLinkedin /></a>
             </div>
 
             {modal && <Modal closeModal={setModal} />}

@@ -27,9 +27,9 @@ const MainHome = () => {
         <div className="app" >
 
             <div className="buttons">
-                <button className="btn homeBtn" onClick={() => { ogHome() }}>Home</button>
-                <button className="btn aboutBtn" onClick={() => { ogAbout() }}>About</button>
-                <button className="btn projectBtn" onClick={() => { ogProjects() }}>Projects</button>
+                <button className="mainHomeBtn homeBtn" onClick={() => { ogHome() }}>Home</button>
+                <button className="mainHomeBtn aboutBtn" onClick={() => { ogAbout() }}>About</button>
+                <button className="mainHomeBtn projectBtn" onClick={() => { ogProjects() }}>Projects</button>
             </div>
 
             <div className="container ">

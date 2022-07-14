@@ -23,7 +23,7 @@
   
   .horizontalLine {
     border-color: aqua;
-    
+    width: 55vw;
   }
   
   .taskForm {

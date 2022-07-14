@@ -17,7 +17,7 @@ body {
     margin-top: 20px;
 }
 
-.btn {
+.mainHomeBtn {
     appearance: button;
     background-color: rgb(36, 35, 35);
     background-image: none;
@@ -41,9 +41,10 @@ body {
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
+    padding: 5px 12px;
 }
   
-  .btn:focus {
+  .mainHomeBtn:focus {
     outline: none ! important;
     text-decoration: none;
     color: cornsilk;
@@ -53,23 +54,23 @@ body {
     
   }
   
-  .btn:hover {
+  .mainHomeBtn:hover {
     text-decoration: none;
     color:cornsilk;
   }
   
-  .btn:active {
+  .mainHomeBtn:active {
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     outline: 0;
   }
   
-  .btn:not([disabled]):active {
+  .mainHomeBtn:not([disabled]):active {
     box-shadow: cornsilk 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
   
   @media (min-width: 768px) {
-    .btn {
+    .mainHomeBtn {
       padding: 8px 25px;
     }
   }

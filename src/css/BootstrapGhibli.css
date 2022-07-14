@@ -1,3 +1,15 @@
+#homeContainer  {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#filmContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
 .card-text {
     color: black;
 }
@@ -6,16 +18,23 @@
     color: black;
 }
 
-.card-link {
-    color: black;
+#emailLink {
+    color: rgb(16, 134, 3);
+}
+
+#emailLink:hover {
+    color: blueviolet;
 }
 
 .navContainer {
     background-color: white;
 }
 
-.ghibliBtn {
+
+#ghibliBtn {
     color: black;
+    margin: 3px;
+    padding: 3px;
 }
 
 .ghibliCloseBtn {
@@ -24,11 +43,13 @@
 }
 
 .ghibliCloseBtn button {
+    
     background-color: transparent;
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    color: cornsilk;
-    margin-top: 5px;
+    color: rgb(41, 41, 41);
+    margin: auto;
+    margin-top: 50px;
 }
 

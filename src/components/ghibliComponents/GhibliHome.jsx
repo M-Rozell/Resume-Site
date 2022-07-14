@@ -13,7 +13,7 @@ const GhibliHome = () => {
     }
 
     return (
-        <>
+        <div id="homeContainer">
             <div className='ghibliCloseBtn '>
                 <button onClick={navigateToProjects}><AiOutlineCloseCircle /></button>
             </div>
@@ -34,11 +34,11 @@ const GhibliHome = () => {
                             click the Read More links to see the full details of that
                             resource. Enjoy!
                         </p>
-                        <a href="mailto:maggiemagnum@gmail.com" className="card-link">maggiemagnum@gmail.com</a>
+                        <a href="mailto:maggiemagnum@gmail.com" className="card-link" id="emailLink">maggiemagnum@gmail.com</a>
                     </div>
                 </div>
             </main>
-        </>
+        </div>
     )
 }
 

@@ -21,21 +21,44 @@
   text-align: center;
 }
 
-.emailBtn {
+#emailBtn {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-a:link {
+#emailBtn:link {
   color: aqua;
   text-decoration: none;
 }
-
-a:visited {
+#emailBtn:visited {
   color: aqua;
 }
 
-a:hover {
+#emailBtn:hover {
+  color: cornsilk;
+}
+
+#githubBtn:link {
+  color: aqua;
+  text-decoration: none;
+}
+#githubBtn:visited {
+  color: aqua;
+}
+
+#githubBtn:hover {
+  color: cornsilk;
+}
+
+#linkedinBtn:link {
+  color: aqua;
+  text-decoration: none;
+}
+#linkedinBtn:visited {
+  color: aqua;
+}
+
+#linkedinBtn:hover {
   color: cornsilk;
 }
 

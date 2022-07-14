@@ -21,7 +21,7 @@ const Films = () => {
     }, []); //this stays empty b/c we are only running it once
 
     return (
-        <>
+        <div id="filmContainer">
             <div className='ghibliCloseBtn '>
                 <button onClick={navigateToProjects}><AiOutlineCloseCircle /></button>
             </div>
@@ -45,7 +45,7 @@ const Films = () => {
                     </ul>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 export default Films;
