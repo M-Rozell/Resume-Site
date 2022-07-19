@@ -1,7 +1,7 @@
 
-import React from 'react'
-import "../css/Modal.css"
-import { AiOutlineCloseCircle } from "react-icons/ai"
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import React from 'react';
+import "../css/Modal.css";
 
 function Modal({ closeModal }) {  //prop closeModal
 
@@ -13,6 +13,7 @@ function Modal({ closeModal }) {  //prop closeModal
                     <div className='titleCloseBtn' >
                         <button onClick={() => closeModal(false)}><AiOutlineCloseCircle /></button>
                     </div>
+
                     <div className='title'>
                         <div>Skills</div>
                     </div>

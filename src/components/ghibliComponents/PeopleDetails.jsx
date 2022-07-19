@@ -1,15 +1,17 @@
 
 import { Link, useParams, useNavigate } from "react-router-dom";
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import '../../css/BootstrapGhibli.css';
 import { useState, useEffect } from "react";
-import { AiOutlineCloseCircle } from 'react-icons/ai'
 import Navbar from "./Navbar";
+
 
 const PeopleDetails = () => {
 
     const navigate = useNavigate();
     const navigateToProjects = () => {
         navigate('/')
-    }
+    };
 
     const { peopleid } = useParams();
     const [details, setDetails] = useState(null);
@@ -22,13 +24,15 @@ const PeopleDetails = () => {
     }, [peopleid]); //array dependency
 
     return (
-        <>
+
+        <div id="peopleDetailsApp">
+
             <div className='ghibliCloseBtn '>
                 <button onClick={navigateToProjects}><AiOutlineCloseCircle /></button>
             </div>
 
             <Navbar />
-            
+
             <div className="container mt-5">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
@@ -45,9 +49,8 @@ const PeopleDetails = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
-
 }
 
 export default PeopleDetails;

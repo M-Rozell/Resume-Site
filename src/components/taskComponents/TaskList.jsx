@@ -1,9 +1,9 @@
 
-import React, { useState, useEffect } from 'react'
-import TaskForm from './TaskForm'
+import React, { useState, useEffect } from 'react';
+import TaskForm from './TaskForm';
 import Tasks from './Tasks';
 
-const LOCAL_STORAGE_KEY = 'taskApp.tasks'
+const LOCAL_STORAGE_KEY = 'taskApp.tasks';
 
 function TaskList() {
   const [tasks, setTasks] = useState(
@@ -21,7 +21,7 @@ function TaskList() {
   //store Tasks
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(tasks))
-  }, [tasks])
+  }, [tasks]);
 
   const addTask = task => {
     if (!task.text || /^\s*$/.test(task.text)) { //pulled from stackOverflow...uses RegExp test method to test whether a string val is empty or only contains spaces. The test() method executes a search for a match between a regular expression and a specified string. Returns true or false.

@@ -1,9 +1,9 @@
 
-import React, { useState, useEffect } from 'react'
-import '../css/TTTModal.css'
+import { WinningCells } from './tttComponents/WinningCells';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import React, { useState, useEffect } from 'react';
 import Square from './tttComponents/Square';
-import { WinningCells } from './tttComponents/WinningCells'
-import { AiOutlineCloseCircle } from 'react-icons/ai'
+import '../css/TTTModal.css';
 
 function TTTModal({ closeModal }) {
 
@@ -14,7 +14,7 @@ function TTTModal({ closeModal }) {
     useEffect(() => {
         checkWin();
         checkTie();
-        if (player == 'X') {
+        if (player === 'X') {
             setPlayer('O')
         } else {
             setPlayer('X')
@@ -30,7 +30,7 @@ function TTTModal({ closeModal }) {
 
     const chooseSquare = (square) => {
         setTable(table.map((value, index) => {
-            if (index == square && value == '') {
+            if (index === square && value === '') {
                 return player
             }
             return value;
@@ -56,29 +56,30 @@ function TTTModal({ closeModal }) {
     const checkTie = () => {
         let filled = true;
         table.forEach((square) => {
-            if (square == '') {
+            if (square === '') {
                 filled = false
             }
         })
         if (filled) {
             setResult({ winner: 'No One', state: 'Tie' })
         }
-    }
+    };
 
     const restartGame = () => {
         setTable(['', '', '', '', '', '', '', '', ''])
         setPlayer('O');
-    }
+    };
 
     return (
 
         <div className='container tttContainer'>
             <div className='tttModalBg'>
+
                 <div className='tttCloseBtn '>
                     <button onClick={() => closeModal(false)}><AiOutlineCloseCircle /></button>
                 </div>
+
                 <h2>Tic Tac Toe</h2>
-                <div className="msg"></div>
 
                 <div id="board" className=''>
 
@@ -87,15 +88,14 @@ function TTTModal({ closeModal }) {
                         <Square value={table[0]} clickSquare={() => { chooseSquare(0) }} />
                         <Square value={table[1]} clickSquare={() => { chooseSquare(1) }} />
                         <Square value={table[2]} clickSquare={() => { chooseSquare(2) }} />
-
                     </div>
+
 
                     <div className="tRow">
 
                         <Square value={table[3]} clickSquare={() => { chooseSquare(3) }} />
                         <Square value={table[4]} clickSquare={() => { chooseSquare(4) }} />
                         <Square value={table[5]} clickSquare={() => { chooseSquare(5) }} />
-
                     </div>
 
                     <div className="tRow">
@@ -103,13 +103,11 @@ function TTTModal({ closeModal }) {
                         <Square value={table[6]} clickSquare={() => { chooseSquare(6) }} />
                         <Square value={table[7]} clickSquare={() => { chooseSquare(7) }} />
                         <Square value={table[8]} clickSquare={() => { chooseSquare(8) }} />
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     )
 }
+
 export default TTTModal;

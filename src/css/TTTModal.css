@@ -1,5 +1,4 @@
 
-
 .tttContainer {
     width: 50vw;
     height: 50vh;
@@ -53,6 +52,5 @@
     font-size: 1rem;
     cursor: pointer;
     color: cornsilk;
-    margin-top: 5px;
-    
+    margin-top: 20px;
 }

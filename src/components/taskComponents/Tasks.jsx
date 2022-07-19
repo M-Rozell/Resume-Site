@@ -1,14 +1,15 @@
 
-import React, { useState } from 'react'
+import { MdModeEditOutline } from 'react-icons/md';
+import { AiOutlineClose } from 'react-icons/ai';
+import React, { useState } from 'react';
 import TaskForm from './TaskForm';
-import { AiOutlineClose } from 'react-icons/ai'
-import { MdModeEditOutline } from 'react-icons/md'
+
 
 function Tasks({ tasks, completeTask, removeTask, updateTask }) {
     const [edit, setEdit] = useState({
         id: null,
         value: ''
-    })
+    });
 
     const submitUpdate = value => {
         updateTask(edit.id, value)
@@ -20,7 +21,7 @@ function Tasks({ tasks, completeTask, removeTask, updateTask }) {
 
     if (edit.id) {
         return <TaskForm edit={edit} onSubmit={submitUpdate} />
-    }
+    };
 
     return tasks.map((task, index) => (
 

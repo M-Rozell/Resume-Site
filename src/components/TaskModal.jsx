@@ -1,7 +1,8 @@
-import React from 'react'
-import TaskList from "../components/taskComponents/TaskList"
-import "../css/TaskModal.css"
-import { AiOutlineCloseCircle } from 'react-icons/ai'
+
+import TaskList from "../components/taskComponents/TaskList";
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import "../css/TaskModal.css";
+import React from 'react';
 
 function TaskModal({ closeModal }) {
     return (
@@ -14,6 +15,6 @@ function TaskModal({ closeModal }) {
             </div>
         </div>
     )
-}
+};
 
-export default TaskModal
+export default TaskModal;

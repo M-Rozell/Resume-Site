@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import "../css/About.css"
-import { BsGithub } from "react-icons/bs"
-import { AiOutlineMail } from "react-icons/ai"
-import { ImLinkedin } from "react-icons/im"
-import Modal from "../components/Modal";
 
+import { AiOutlineMail } from "react-icons/ai";
+import { ImLinkedin } from "react-icons/im";
+import React, { useState } from "react";
+import { BsGithub } from "react-icons/bs";
+import Modal from "../components/Modal";
+import "../css/About.css";
 
 
 const About = () => {
 
-    const [modal, setModal] = useState(false) //don't want it to render initially.
+    const [modal, setModal] = useState(false); //don't want it to render initially.
 
     return (
-        
+
         <div className="aboutContainer" >
 
             <div className="linkBtns">

@@ -1,15 +1,17 @@
 
 import { Link, useParams, useNavigate } from "react-router-dom";
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import '../../css/BootstrapGhibli.css';
 import { useState, useEffect } from "react";
-import { AiOutlineCloseCircle } from 'react-icons/ai'
 import Navbar from "./Navbar";
+
 
 const PilotDetails = () => {
 
     const navigate = useNavigate();
     const navigateToProjects = () => {
         navigate('/')
-    }
+    };
 
     const { peopleid } = useParams();
     const [details, setDetails] = useState(null);
@@ -22,32 +24,34 @@ const PilotDetails = () => {
     }, [peopleid]); //array dependency
 
     return (
-        <>
-            <div className='ghibliCloseBtn '>
-                <button onClick={navigateToProjects}><AiOutlineCloseCircle /></button>
-            </div>
+        <div id="pilotApp">
+            <div id="pilotContainer">
 
-            <Navbar />
-            <div className="container mt-5">
-                <div className="row justify-content-center">
-                    <div className="col-md-6">
-                        <div className="card shadow rounded">
-                            <div className="card-body">
+                <div className='ghibliCloseBtn '>
+                    <button onClick={navigateToProjects}><AiOutlineCloseCircle /></button>
+                </div>
 
-                                <h2 className="card-title">{details?.name}</h2>
-                                <h6 className="card-subtitle mt-2">Gender: {details?.gender}</h6>
-                                <h6 className="card-subtitle mt-1">Age: {details?.age}</h6>
-                                <h6 className="card-subtitle mt-1">Eye Color: {details?.eye_color}</h6>
-                                <h6 className="card-subtitle mt-1">Hair Color: {details?.hair_color}</h6>
-                                <Link to="/vehicles" className="btn btn-outline-success mt-3">Go Back</Link>
+                <Navbar />
+                <div className="container mt-5">
+                    <div className="row justify-content-center">
+                        <div className="col-md-6">
+                            <div className="card shadow rounded">
+                                <div className="card-body">
+
+                                    <h2 className="card-title">{details?.name}</h2>
+                                    <h6 className="card-subtitle mt-2">Gender: {details?.gender}</h6>
+                                    <h6 className="card-subtitle mt-1">Age: {details?.age}</h6>
+                                    <h6 className="card-subtitle mt-1">Eye Color: {details?.eye_color}</h6>
+                                    <h6 className="card-subtitle mt-1">Hair Color: {details?.hair_color}</h6>
+                                    <Link to="/vehicles" className="btn btn-outline-success mt-3">Go Back</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
-
 }
 
 export default PilotDetails;

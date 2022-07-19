@@ -1,5 +1,6 @@
-import React from 'react'
+
 import '../../css/TTTModal.css'
+import React from 'react'
 
 function Square({value, clickSquare}) {
     return (
@@ -9,6 +10,6 @@ function Square({value, clickSquare}) {
             {value}
         </div>
     )
-}
+};
 
 export default Square;

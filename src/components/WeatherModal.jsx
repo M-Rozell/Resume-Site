@@ -1,15 +1,17 @@
+
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import React, { useState } from "react";
+import '../css/WeatherModal.css';
 import axios from "axios";
 import moment from "moment";
-import { AiOutlineCloseCircle } from 'react-icons/ai'
-import '../css/WeatherModal.css'
+
 
 function WeatherModal({ closeModal }) {
-    const [data, setData] = useState({})
+    const [data, setData] = useState({});
 
-    const [location, setLocation] = useState('')
+    const [location, setLocation] = useState('');
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=bdb95c6b9964e1a35c7b8cb3c7a548c7`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=bdb95c6b9964e1a35c7b8cb3c7a548c7`;
 
     const search = (e) => {
         if (e.key === 'Enter') {
@@ -19,16 +21,17 @@ function WeatherModal({ closeModal }) {
             })
             setLocation('')
         }
-    }
+    };
 
     return (
         <div className="weatherAppContainer">
             <div className="weatherApp">
-
                 <div className="topContainer">
+
                     <div className='weatherCloseBtn '>
                         <button onClick={() => closeModal(false)}><AiOutlineCloseCircle /></button>
                     </div>
+
                     <div className="search">
                         <input value={location} onChange={e => setLocation(e.target.value)} type='text' placeholder="Location" onKeyPress={search} />
                         <div className="day">{moment().format('MMMM Do YYYY, h:mm:ss a')}</div>
