@@ -8,6 +8,8 @@ import React from "react";
 
 const GhibliHome = () => {
 
+    
+
     const navigate = useNavigate();
     const navigateToProjects = () => {
         navigate('/')
