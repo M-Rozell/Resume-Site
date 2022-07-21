@@ -26,6 +26,8 @@ function WeatherModal({ closeModal }) {
     return (
         <div className="weatherAppContainer">
             <div className="weatherApp">
+                
+                
                 <div className="topContainer">
 
                     <div className='weatherCloseBtn '>
