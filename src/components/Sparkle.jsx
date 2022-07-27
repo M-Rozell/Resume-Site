@@ -30,7 +30,7 @@ for (let i= 0; i < starPort; i++) {
 }
 
 export default Sparkle;
-
+// Conditional Class names/npm classnames
 // className={classNames({
 //                 sparkle: true,
 //                 small: true,

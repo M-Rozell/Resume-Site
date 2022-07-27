@@ -49,6 +49,7 @@
 
 #emailLink {
     color: rgb(16, 134, 3);
+    text-decoration: none;
 }
 
 #emailLink:hover {

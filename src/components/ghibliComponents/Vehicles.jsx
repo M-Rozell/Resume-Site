@@ -37,7 +37,7 @@ const Vehicles = () => {
                                 {vehicles.map(vehicle => (
                                     <li
                                         key={`vehicles=${vehicle.id}`}
-                                        className="list-group-item d-flex justify-content-between align-items-center">
+                                        className="list-group-item d-flex justify-content-between align-items-center shadow rounded">
                                         <span>{vehicle.name}</span>
                                         <Link to={`/vehicles/${vehicle.id}`} className="btn btn-outline-success">
                                             Full Details

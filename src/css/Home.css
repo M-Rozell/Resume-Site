@@ -1,147 +1,178 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
-/* body {
-    background-color: rgb(27, 27, 28);
-} */
 
 .app {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory; */
+
 }
 
 .appContainer {
-  
   width: 100%;
   height: 100%;
   background-color: #d38db3;
   border-top: 10px solid #45ffc7;
   border-left: 10px solid #45ffc7;
   border-right: 10px solid #45ffc7;
-  
+
+
   /* background-color: #45FFC7; */
   /* background-color: #97effb; */
 }
 
+/* .section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+} */
+/* .section2 {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.section3 {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.section4 {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+} */
+
+
+
+
 .buttons {
-    padding-top: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: flex-end;
-    
-   
+  padding-top: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+background: transparent;
+position: relative;
+
+
 }
 
 .mainHomeBtn {
-    appearance: button;
-    background-color: #95bb93;
-    background-image: none;
-    border: 1px solid #45ffc7;
-    border-radius: 4px;
-    box-shadow: cornsilk 4px 4px 0 0,#45ffc7 4px 4px 0 1px;
-    box-sizing: border-box;
-    color: #F7EF8A;
-    cursor: pointer;
-    display: inline-block;
-    /* font-family: ITCAvantGardeStd-Bk,Arial,sans-serif; */
-    font-size: .75rem;
-    /* font-weight: 400; */
-    line-height: 20px;
-    margin: 0 10px 10px 0;
-    overflow: visible;
-    text-align: center;
-    text-transform: none;
-    /* touch-action: manipulation; */
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    padding: 5px 12px;
+  appearance: button;
+  background-color: #95bb93;
+  background-image: none;
+  border: 1px solid #45ffc7;
+  border-radius: 4px;
+  box-shadow: cornsilk 4px 4px 0 0, #45ffc7 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #F7EF8A;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: ITCAvantGardeStd-Bk,Arial,sans-serif; */
+  font-size: .75rem;
+  /* font-weight: 400; */
+  line-height: 20px;
+  margin: 0 10px 10px 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  /* touch-action: manipulation; */
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 5px 12px;
+
+
 }
-  
-  .mainHomeBtn:focus {
-    outline: none ! important;
-    text-decoration: none;
-    color: cornsilk;
-    border-color: cornsilk;
-    box-shadow: 4px 4px 0 1px cornsilk;
-    /* box-shadow: 0 0 10px cornsilk; */
-    
+
+.mainHomeBtn:focus {
+  outline: none ! important;
+  text-decoration: none;
+  color: cornsilk;
+  border-color: cornsilk;
+  box-shadow: 4px 4px 0 1px cornsilk;
+  /* box-shadow: 0 0 10px cornsilk; */
+
+}
+
+.mainHomeBtn:hover {
+  text-decoration: none;
+  color: cornsilk;
+}
+
+.mainHomeBtn:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.mainHomeBtn:not([disabled]):active {
+  box-shadow: cornsilk 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .mainHomeBtn {
+    padding: 8px 25px;
   }
-  
-  .mainHomeBtn:hover {
-    text-decoration: none;
-    color:cornsilk;
-  }
-  
-  .mainHomeBtn:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .mainHomeBtn:not([disabled]):active {
-    box-shadow: cornsilk 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .mainHomeBtn {
-      padding: 8px 25px;
-    }
-  }
+}
 
 
 .nameBox {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}    
-    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .name {
-    margin: auto;
-   background:  -webkit-linear-gradient(#AE8625, #F7EF8A, #D2AC47);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-family: 'Rampart One', cursive;
-   font-size: larger;
-   /* color: cornsilk; */
-    justify-content: center;
-    font-size: 6rem;
-    /* animation: fadeIn 10s;
+  margin: auto;
+  background: -webkit-linear-gradient(#AE8625, #F7EF8A, #D2AC47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Rampart One', cursive;
+  font-size: larger;
+  /* color: cornsilk; */
+  justify-content: center;
+  font-size: 6rem;
+  /* animation: fadeIn 10s;
     -webkit-animation: fadeIn 10s;
     -moz-animation: fadeIn 10s;
     -o-animation: fadeIn 10s;
     -ms-animation: fadeIn 10s; */
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-} 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
 .arrowUp {
   position: relative;
   display: flex;
-  
+
 }
 
 .icon-position {
   position: absolute;
   bottom: 30px;
   right: 25px;
- 
 }
+
+
 
 .arrowBtn {
   color: cornsilk;
@@ -160,28 +191,28 @@
 
 @keyframes movebtn {
   0% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   25% {
-      transform: translateY(10px);
+    transform: translateY(10px);
   }
 
   50% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 
   75% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   100% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 
-    
+
 /* .fullStack {
     color: cornsilk;
     font-size: 1.5rem;
@@ -254,7 +285,7 @@
 }
 
 /*CSS3 keyframes for glittering effect*/
-@keyframes glitter {
+/* @keyframes glitter {
   0% {
     -webkit-transform: scale(0.3) rotate(0deg);
     opacity: 0;
@@ -274,13 +305,38 @@
     -webkit-transform: scale(0.3) rotate(0deg);
     opacity: 0;
   }
+} */
+
+
+.section4 {
+  width: 100%;
+  height: 100%;
+  background-color: #f4b0a5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+}
+
+.section4Container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
 }
 
 
 
-
-
-    
-
-
-
+.justTry {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

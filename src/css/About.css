@@ -3,9 +3,17 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: rgb(27, 27, 28);
+  background-color: #ede5dd;
+  border: 5px solid #f4b0a5;
   margin: 0;
   padding: 0;
+  
+}
+
+.aboutTitle {
+  margin-left: 10px;
+  color: #dfb255;
+  padding: 20px;
 }
 
 .linkBtns {
@@ -21,11 +29,11 @@
 }
 
 #emailBtn:link {
-  color: aqua;
+  color: #9eaf92;
   text-decoration: none;
 }
 #emailBtn:visited {
-  color: aqua;
+  color: #9eaf92;
 }
 
 #emailBtn:hover {
@@ -33,11 +41,11 @@
 }
 
 #githubBtn:link {
-  color: aqua;
+  color: #9eaf92;
   text-decoration: none;
 }
 #githubBtn:visited {
-  color: aqua;
+  color: #9eaf92;
 }
 
 #githubBtn:hover {
@@ -45,11 +53,11 @@
 }
 
 #linkedinBtn:link {
-  color: aqua;
+  color: #9eaf92;
   text-decoration: none;
 }
 #linkedinBtn:visited {
-  color: aqua;
+  color: #9eaf92;
 }
 
 #linkedinBtn:hover {
@@ -61,8 +69,16 @@
   display: flex;
   padding: .5rem;
   margin-top: 10px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.objective {
+  border: 5px solid #dfb255;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #9eaf92;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .pObjective {
@@ -82,7 +98,7 @@ ul {
 }
 
 .txtCertifications {
-  color: aqua;
+  color: cornsilk;
   font-size: .75rem;
 }
 
@@ -93,7 +109,7 @@ ul {
 }
 
 .txtEducation {
-  color: aqua;
+  color: cornsilk;
   font-size: .75rem;
 }
 
@@ -117,8 +133,12 @@ ul {
   margin-top: .5rem;
   border-radius: 8px;
   padding: .15rem .5rem;
-  border-color: aqua;
+  border-color: #9eaf92;
   border-width: 1px;
   background: transparent;
   color: cornsilk;
+}
+
+#modalBtn:hover {
+  border-color: cornsilk;
 }

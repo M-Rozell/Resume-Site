@@ -1,5 +1,6 @@
 import React from 'react';
 import MainHome from "./Pages/MainHome"
+import MainH from './Pages/MainH';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Films from "./components/ghibliComponents/Films";
@@ -20,7 +21,7 @@ const App = () => {
         <BrowserRouter>
             <Routes>
 
-                <Route path="/" element={<MainHome />} />
+                <Route path="/" element={<MainH />} />
                 <Route path="/GhibliHome" element={<GhibliHome />} />
                 <Route path="/Films" element={<Films />} />
                 <Route path="/People" element={<People />} />
