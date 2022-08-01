@@ -5,8 +5,8 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
 background: gray;
-height: 80px;
-// margin-top: -80px;
+height: 60px;
+/* margin-top: -80px; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -23,7 +23,7 @@ z-index:20;
 export const NavbarContainer = styled.div`
 display: flex;
 justify-content: space-between;
-height: 80px;
+height: 60px;
 z-index: 1;
 width: 100%;
 padding: 0 24px;
@@ -31,7 +31,7 @@ max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkRouter)`
-color: red;
+color: purple;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -49,7 +49,7 @@ display: none;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 35%);
+    transform: translate(-100%, 15%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #F7EF8A;
@@ -148,6 +148,33 @@ background-color: #95bb93;
     padding: 8px 25px;
   }
 }
-
-
 `
+
+// export const NavBtn = styled.nav `
+// display: flex;
+// align-items: center;
+
+// @media screen and (max-width: 768px) {
+//     display: none;
+// }
+// `
+
+// export const NavBtnLink = styled(LinkRouter)`
+// border-radius: 8px;
+// background: #01bf71;
+// white-space: nowrap;
+// padding: 10px 22px;
+// color: #010606;
+// font-size: 1rem;
+// outline: none;
+// border: none;
+// cursor: pointer;
+// transition: all 0.5s ease-in-out;
+// text-decoration: none;
+
+// &:hover {
+//     transition: all 0.5s ease-in-out;
+//     background: #fff;
+//     color: #010606;
+// }
+// `

@@ -21,14 +21,30 @@
 
 // export default MainH
 
-import React from 'react'
+import React, { useState } from 'react'
+import HeroSection from '../components/HeroSection';
+import InfoSection from '../components/InfoSection';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import MainNavbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 
 
 function MainH() {
+
+const [isOpen, setIsOpen] = useState(false);
+
+const toggle = () => {
+  setIsOpen(!isOpen)
+}
+
   return (
     <div>
-        <MainNavbar />
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <MainNavbar toggle={toggle}/>
+        <HeroSection />
+        <InfoSection {...homeObjOne}/>
+        <InfoSection {...homeObjTwo}/>
+        <InfoSection {...homeObjThree}/>
     </div>
   )
 }
